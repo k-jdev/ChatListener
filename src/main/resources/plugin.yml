@@ -1,0 +1,4 @@
+name: ChatListenerPlugin
+version: '1.0-SNAPSHOT'
+main: org.example.xenos.chatListenerPlugin.ChatListenerPlugin
+api-version: '1.21'
