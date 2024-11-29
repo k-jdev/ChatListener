@@ -2,24 +2,23 @@ plugins {
     id 'java'
 }
 
-group = 'org.example.xenos'
+group = 'com.example' // Укажите свой пакет
 version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
     maven {
-        name = "spigotmc-repo"
-        url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' // Репозиторий Spigot
     }
     maven {
-        name = "sonatype"
-        url = "https://oss.sonatype.org/content/groups/public/"
+        url = 'https://oss.sonatype.org/content/repositories/snapshots/' // Дополнительный репозиторий
     }
 }
 
 dependencies {
-    compileOnly("org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT")
+    compileOnly 'org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT' // Укажите вашу версию
 }
+
 
 def targetJavaVersion = 21
 java {
